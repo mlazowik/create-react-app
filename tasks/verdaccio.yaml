@@ -20,6 +20,12 @@ auth:
 uplinks:
   npmjs:
     url: https://registry.npmjs.org/
+    timeout: 30s
+    max_fails: 3
+  yarnpkg:
+    url: https://registry.yarnpkg.com/
+    timeout: 30s
+    max_fails: 3
 
 packages:
   '@*/*':
